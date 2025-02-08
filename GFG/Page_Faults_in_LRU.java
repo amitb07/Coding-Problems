@@ -7,7 +7,7 @@
 import java.io.*;
 import java.util.*;
 import java.lang.*;
-// TimeComplexity O(n)
+// TimeComplexity O(n*capacity) SpaceComplexity: O(capacity)
 class Solution{
     static int pageFaults(int n, int c, int pages[]){
         // code here
