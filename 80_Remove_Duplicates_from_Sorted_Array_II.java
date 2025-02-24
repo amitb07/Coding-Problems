@@ -2,7 +2,7 @@
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150
 
 class Solution {
-
+    // most optimum solution O(n)
     public int removeDuplicates(int[] nums) {
         int k = 2;
 
@@ -15,7 +15,8 @@ class Solution {
 
         return k;        
     }
-    
+
+    // traverse the array twice, not the optimum solution
     public int removeDuplicates2(int[] nums) {
         int i, j, c=0, k=0,duplicates=0, n=nums.length;
         i=0; j=0;
