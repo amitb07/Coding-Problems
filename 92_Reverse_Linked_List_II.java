@@ -21,9 +21,9 @@ class Solution {
             left--; 
         }
         if(prev!=null)
-            prev.next = reverse(cur, n);
-        else
-            head = reverse(head, n);
+            prev.next = reverse(cur, n); // returns the last node ie. right position
+        // else
+        //     head = reverse(head, n);
         return head;
     }
     ListNode reverse(ListNode head, int n) {
@@ -39,6 +39,5 @@ class Solution {
         }
         start.next = cur;
         return prev;
-
     }
 }
